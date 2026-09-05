@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# RiskLens AI
 
-# Run and deploy your AI Studio app
+AI-powered transaction risk intelligence platform. Detects potentially fraudulent or high-risk financial transactions in real time using a trained machine learning model.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/90041545-cf1c-469a-813a-a7fc90b8261f
+- Real-time transaction risk scoring using a Random Forest classifier trained on 5,000+ transactions
+- Pull random real transactions from the dataset and see live risk analysis
+- Manually enter transaction details to test how the model responds
+- Plain-English explanations for why a transaction was flagged
+- ROC-AUC of 0.92 on held-out test data
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Backend:** FastAPI (Python)
+- **ML:** scikit-learn (Random Forest Classifier)
 
+## Running Locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Backend
