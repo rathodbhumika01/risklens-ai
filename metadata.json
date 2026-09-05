@@ -1,0 +1,6 @@
+{
+  "name": "RiskLens AI",
+  "description": "AI-powered transaction risk intelligence that analyzes banking transactions and explains risk in plain English.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
