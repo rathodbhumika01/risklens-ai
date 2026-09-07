@@ -1,21 +1,7 @@
-# RiskLens AI 🛡️
+
+## RiskLens AI 🛡️
 
 AI-powered transaction risk intelligence platform. Detects potentially fraudulent or high-risk financial transactions in real time using a machine learning model trained on real transaction data.
-
-
-
-## 🔍 Overview
-
-Fraud and risk teams get flooded with flagged transactions but very little context on *why* something was flagged, which slows down review and manual decision-making. RiskLens AI solves this by scoring every transaction for risk using a trained ML model, then generating a human-readable explanation of exactly which signals made it risky — along with a recommended action (approve, monitor, or send for manual review). This turns a raw risk score into something an analyst can act on immediately.
-
-The model is a Random Forest classifier trained on 5,000+ real transaction records, achieving a ROC-AUC of 0.92 on held-out test data.
-
----
-
-## # RiskLens AI 🛡️
-
-AI-powered transaction risk intelligence platform. Detects potentially fraudulent or high-risk financial transactions in real time using a machine learning model trained on real transaction data.
-
 ---
 
 ## 🔍 Overview
