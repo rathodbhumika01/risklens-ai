@@ -10,6 +10,18 @@ AI-powered transaction risk intelligence platform. Detects potentially fraudulen
 - Plain-English explanations for why a transaction was flagged
 - ROC-AUC of 0.92 on held-out test data
 
+## 🚦 Risk Level Thresholds
+
+Every transaction is scored between 0% and 100% by the model, then classified into one of three risk bands:
+
+| Risk Level | Score Range | Color | Recommended Action |
+|---|---|---|---|
+| 🟢 **Low Risk** | 0% – 30% | Green | Approve Transaction |
+| 🟡 **Medium Risk** | 30% – 60% | Orange/Amber | Monitor Transaction |
+| 🔴 **High Risk** | 60% – 100% | Red | Send for Manual Review |
+
+These thresholds are configurable in `main.py` and can be tuned based on an organization's risk appetite.
+
 ## Tech Stack
 
 - **Frontend:** React, TypeScript, Vite, Tailwind CSS
