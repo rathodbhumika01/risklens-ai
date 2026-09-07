@@ -12,6 +12,9 @@ The model is a Random Forest classifier trained on 5,000+ real transaction recor
 
 ---
 
+## 🌐 Live Demo
+[Try RiskLens AI live](https://risklens-ai-chi.vercel.app)
+
 ## ✨ Features
 
 - **Real-time transaction risk scoring** using a Random Forest classifier trained on 5,000+ real transactions
