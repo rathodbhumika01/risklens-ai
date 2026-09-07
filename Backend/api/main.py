@@ -179,7 +179,8 @@ def encode_transaction(txn: dict) -> pd.DataFrame:
 
 def rule_based_explanation(
     txn: dict,
-    risk_score: float
+    risk_score: float,
+    risk_level: str = "High"
 ) -> str:
 
     reasons = []
@@ -238,7 +239,7 @@ def rule_based_explanation(
         )
 
     return (
-        f"Flagged as high risk "
+        f"Flagged as {risk_level.lower()} risk "
         f"(score {risk_score:.0%}) because "
         + ", and ".join(reasons)
         + "."
@@ -334,7 +335,8 @@ def score_transaction(
             )
             or rule_based_explanation(
                 txn_dict,
-                risk_score
+                risk_score,
+                "High"
             )
         )
 
@@ -429,7 +431,7 @@ def analyze_transaction(txn: SimpleTransaction):
     else:
         risk_level = "High"
 
-    explanation = rule_based_explanation(full_txn, risk_score)
+    explanation = rule_based_explanation(full_txn, risk_score, risk_level)
 
     return {
         "risk_score": round(risk_score, 4),
@@ -515,7 +517,7 @@ def score_by_id(req: TxnIdRequest):
     else:
         risk_level = "High"
 
-    explanation = rule_based_explanation(row, risk_score)
+    explanation = rule_based_explanation(row, risk_score, risk_level)
 
     return {
         "risk_score": round(risk_score, 4),
